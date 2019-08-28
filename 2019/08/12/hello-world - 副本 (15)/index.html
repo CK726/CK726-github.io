@@ -6,6 +6,7 @@
     <title>note</title>
     <script src="/js.js"></script>
 </head>
+  <link rel="stylesheet" href="/highlight/styles/solarized-light.css">
   <body>
     <header class="header"> 
     <nav>
@@ -73,27 +74,28 @@
     <div class="title2">
         Hello World
     </div>
+    <span class="postdate">2019/08/12</span>
     <div class="content">
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre>
 <a id="more"></a>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
     </div>
 </div>
 
 <style type="text/css">
+  .postdate{
+        color: rgba(150, 142, 142, 0.568);
+        margin-left: 20px;
+    }
     #content{
         width: 88%;
         height: 100%;
@@ -105,6 +107,129 @@
         color: #e06c75;
         padding-bottom: 20px;
     }
+    
+    .content {
+    padding: 30px;
+}
+.content * {
+    margin: 30px 0;
+}
+
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+    line-height: 40px;
+    margin: 20px 0 15px;
+}
+
+
+.content h1 {
+    font-size: 32px;
+    font-weight: 900;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e06c75;
+}
+
+.content h2 {
+    font-size: 25px;
+    border-left: 3px solid #73b1e0;
+    padding-left: 10px;
+}
+
+.content h3 {
+    font-size: 22px
+}
+
+.content a {
+    color: #e06c75;
+    text-decoration: none;
+}
+
+.content a:hover {
+    border-bottom: 1px solid;
+}
+
+.content h1 a:hover{
+    border-bottom: none;
+}
+
+.content code {
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #999;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #999;
+}
+
+.content pre {
+    font-size: 14px;
+    margin: 20px 0 15px;
+}
+
+.content p {
+    margin: 0 0 10px;
+    line-height: 30px
+}
+
+/* 表格处理 */
+.content table {
+  width: 100%;
+  border: 0;
+  margin: 20px 0 50px 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 35px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+.content table th {
+  background: #73b1e0;
+  font-weight: 800;
+  font-size: 18px;
+  text-align: left;
+  line-height: 35px;
+  color: #FFF;
+}
+
+.content table tr:nth-child(odd) {
+  background: #F4F4F4;
+}
+
+.content table tr:hover,
+.content table td:hover {
+  background: #badbf5;
+  color: #FFF;
+}
+
+.content table td, table th {
+  padding: 5px 20px 5px 20px
+}
+
+.content table tr:first-child th:first-child {
+  border-top-left-radius: 3px;
+}
+
+.content table tr:first-child th:last-child {
+  border-top-right-radius: 3px;
+}
+
+.content table tr:last-child td:first-child {
+  border-bottom-left-radius: 3px;
+}
+
+.content table tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+
 </style>
 
 <script type="text/javascript">
@@ -182,5 +307,7 @@
 </style>
 
 
+    <script src="/highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
