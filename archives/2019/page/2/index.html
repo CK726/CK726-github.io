@@ -71,7 +71,6 @@
     }
 </style>
      <section id="archive">
-    <div class="mainbody">
         <div id="article">
             
                 <article class="article" >
@@ -180,8 +179,7 @@
                     
                 </div>
             
-        </div>
-    </div>  
+        </div> 
 </section>
 
     <nav id="page-nav">
@@ -211,14 +209,8 @@
         color: rgba(150, 142, 142, 0.568);
         margin: 10px 10px 10px 0px;
     }
-    .mainbody{
-        height: 100%;
-        background-color: aqua;
-    }
-    
     #archive{ 
         display: inline-block;
-        margin-bottom: 1%;
         height: 100%;
         margin-left: 6%;
        
@@ -230,7 +222,6 @@
     #sidebar{
         display: inline-block;
         float: right;
-        visibility: hidden;
         width: 30%;
         margin-top: 5%;
         margin-right: 3%;
@@ -238,7 +229,6 @@
     }
     .article{
         margin: 30px 0px 0px 0px;
-        padding-bottom: 1%;
     }
     .rmore{
         color: #e06c75;
@@ -256,10 +246,10 @@
         var w2=document.documentElement.clientWidth;
         if(w2 <= 800){
             document.getElementById("article").style.width="94%";
-            document.getElementById("sidebar").style.visibility="hidden";
+            document.getElementById("sidebar").style.display="none";
         }else{
             document.getElementById("article").style.width="60%";
-            document.getElementById("sidebar").style.visibility="visible";
+            document.getElementById("sidebar").style.display="inline-block";
         }; 
         document.getElementById("archive").style.minHeight=h2+"px";
     }
@@ -267,10 +257,10 @@
         var w21=document.documentElement.clientWidth;
         if(w21 <= 800){
             document.getElementById("article").style.width="94%";
-            document.getElementById("sidebar").style.visibility="hidden";
+            document.getElementById("sidebar").style.display="none";
         }else{
             document.getElementById("article").style.width="60%";
-            document.getElementById("sidebar").style.visibility="visible";
+            document.getElementById("sidebar").style.display="inline-block";
         }; 
         
     }
